@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" 
+      crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" 
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" 
+      crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" 
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" 
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row m-4">
+            <div class="col-lg-8">
+
+                <a id="img_href" href="https://lh3.googleusercontent.com/pw/ACtC-3c0A14s6HLuw85cQ0ysAA9XmC4cgtYFmka6ziQ2lRqytqk8V40qnNNQ4Al39CGYGTtXFRKh4l-DuNRR0HbGjUjhI4j9IyGDmmRS2IqgZji97pSJKpiVQuMWzvEQpmjsfw7tME5sJIG2k3rCyeX_-b9e=s803-no?authuser=0"> 
+                    <img  style="max-width: 95%;" id="img_src" src="https://lh3.googleusercontent.com/pw/ACtC-3c0A14s6HLuw85cQ0ysAA9XmC4cgtYFmka6ziQ2lRqytqk8V40qnNNQ4Al39CGYGTtXFRKh4l-DuNRR0HbGjUjhI4j9IyGDmmRS2IqgZji97pSJKpiVQuMWzvEQpmjsfw7tME5sJIG2k3rCyeX_-b9e=s803-no?authuser=0" /> 
+                </a>
+                
+            </div>
+
+            <div class="col-lg-4">
+
+                <!-- URL input area -->
+                <div class="row">
+                    <div class="col-lg-12">
+                         <div class="form-group">
+                             <label for="image_src">Insert google photos link</label>
+                             <input id="img_input" type="text" class="form-control" onkeyup="setImageURL()">
+                        </div>
+                    </div>
+                </div>
+                <!-- End of URL input area -->
+
+                <!-- Width and height input area -->
+                <div class="row">
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                                 <label for="img_width">Width(in pixels)</label>
+                                 <input id="img_width" type="number" class="form-control" onkeyup="setImageWidth()" onchange="setImageWidth()">
+                             </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="img_height">Height(In pixels)</label>
+                                <input id="img_height" type="number" class="form-control" onkeyup="setImageHeight()" onchange="setImageHeight()">
+                           </div>
+                       </div>
+                </div>
+                <!-- End of width and height area -->
+            </div>
+        </div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
